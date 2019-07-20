@@ -12,7 +12,7 @@ Before running the code, set GPUs to use.
 ```
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 ```
-### Unrolled RNN
+### -Unrolled RNN
 To run the code with `DataParallel`, 
 ```python
 python unrolled_DP.py
@@ -23,7 +23,7 @@ To run the code with `DistributedDataParallel`,
 python unrolled_DDP.py
 ```
 
-### Rolled RNN
+### -Rolled RNN
 ```python
 python rolled_DDP.py
 ```
