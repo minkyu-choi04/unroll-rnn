@@ -1,11 +1,8 @@
 # Unrolled-RNN in Pytorch
-This repo has sample codes for manumally unrolled RNN with multi-GPU environment. 
-
-`unrolled_DP.py`: unrolled RNN with `DataParallel`.
-
-`unrolled_DDP.py`: unrolled RNN with `DistributedDataParallel`. 
-
-`rolled_DDP.py`: rolled RNN with `DistributedDataParallel`.
+This repo has sample codes for manumally unrolled RNN with multi-GPU environment.   
+`unrolled_DP.py`: unrolled RNN with `DataParallel`.  
+`unrolled_DDP.py`: unrolled RNN with `DistributedDataParallel`.   
+`rolled_DDP.py`: rolled RNN with `DistributedDataParallel`.  
 
 ## Usage
 Before running the code, set GPUs to use. 
@@ -51,9 +48,10 @@ Surely, in terms of computation time and memory, rolled RNN is better than unrol
 
 
 ## Environment
-This codes are tested under `Ubuntu 18.04`, `Python 3.5`, `Pytorch 1.0.1.post2`. In case of `DistributedDataParallel`, Pytorch version below 1.0 will not work. 
+This codes are tested under `Ubuntu 18.04`, `Python 3.5`, `Pytorch 1.0.1.post2`. In case of `DistributedDataParallel`, Pytorch version below 1.0 will not work.   
+CPU: `Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz`  
+GPU: `NVIDIA TITAN XP 12G`  
 
 ## Reference
-["Official Example"](https://github.com/pytorch/examples/blob/master/imagenet/main.py)
-
+["Official Example"](https://github.com/pytorch/examples/blob/master/imagenet/main.py)  
 ["Pytorch docs"](https://pytorch.org/docs/master/distributed.html#module-torch.distributed)
