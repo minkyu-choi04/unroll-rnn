@@ -53,5 +53,10 @@ CPU: `Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz`
 GPU: `NVIDIA TITAN XP 12G`  
 
 ## Reference
-["Official Example"](https://github.com/pytorch/examples/blob/master/imagenet/main.py)  
-["Pytorch docs"](https://pytorch.org/docs/master/distributed.html#module-torch.distributed)
+Official Example: https://github.com/pytorch/examples/blob/master/imagenet/main.py  
+Pytorch docs: https://pytorch.org/docs/master/distributed.html#module-torch.distributed
+
+## Side Note
+In order to use `BatchNorm`, with multi-GPU, pytorch recommends to use `torch.nn.SyncBatchNorm` with `DDP`. Unfortunatly, there is no way to use synchronized batch normalization with `DP`.   
+Pytorch docs: https://pytorch.org/docs/master/nn.html#torch.nn.SyncBatchNorm   
+Example: https://github.com/dougsouza/pytorch-sync-batchnorm-example   
